@@ -1,4 +1,4 @@
-const CACHE = 'knm-v4';
+const CACHE = 'knm-v6';
 const CORE = ['./', 'index.html', 'css/style.css', 'js/main.js', 'js/config.js', 'assets/images/kevin-profile.jpg', 'assets/images/bevel-gear-trimmer.svg', 'assets/images/epoe-tracker-ui.svg', 'assets/images/welding-fabrication.svg', 'assets/images/cad-blueprints.svg', 'assets/docs/Kevin_Mongare_CV.pdf', 'assets/docs/Degree_Certificate.pdf', 'assets/docs/TVET_License.pdf', 'manifest.json', 'assets/images/icon-192.png', 'assets/images/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
